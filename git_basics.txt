@@ -89,3 +89,22 @@ cd ..
 
 Tip) end/home 단축키
 작성중인 코드 맨 앞/ 맨 뒤로 커서 이동
+
+- git에서 HEAD  
+HEAD -> [브랜치 이름]  
+현재 브랜치 작업트리의 가장 최근 커밋 또는 특정 브랜치를 가리키는 포인터
+
+
+- git checkout: 커밋 이동하기
+```
+# 커밋 해쉬아이디에 해당하는 커밋으로 이동
+git checkout [커밋 해쉬아이디]
+# HEAD포인터가 가리키는 커밋 기준 2번 이전 커밋으로 이동
+git checkout HEAD^^
+# HEAD포인터가 가리키는 커밋 기준 2번 이전 커밋으로 이동
+git checkout HEAD~2
+```
+>> git reset vs git checkout
+https://blog.naver.com/codeitofficial/222011693376
+
+- git switch: 브랜치 이동하기
